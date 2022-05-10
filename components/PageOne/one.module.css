@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.One{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.Left{
+    background-color: rgb(0, 139, 214);
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.LeftOne{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.LeftOne h1{
+    text-transform: capitalize;
+    font-size: 2em;
+}
+.LeftOne p{
+    font-size: 1em;
+}
+
+
+/*Right  */
+
+.Right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+.RightOne p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.Form{
+    position: relative;
+}
+.InputField{
+    position: relative;
+    margin: 20px 0px;
+
+}
+.InputField input{
+    width: 350px;
+    height: 50px;
+    border: 1px solid silver;
+
+    /* border: none; */
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.InputField input:focus{
+    outline: none;
+}
+.SelectField{
+    margin: 20px 0px;
+}
+.SelectField select{
+    width: 350px;
+    height: 50px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+}
+.SelectField option{
+    font-size: 18px;
+
+    background-color: white;
+
+}
+
+.Min{
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    position: relative;
+    bottom: 40px;
+}
+.Show{
+    position: relative;
+    bottom: 58px;
+    left: 300px;
+    cursor: pointer;
+
+}
+.Button{
+    background-color: rgb(148, 148, 148);
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+/* .InputField label{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 500;
+    top:-15px;
+    left: 20px;
+    background-color: white;    
+    color: rgb(120, 120, 120);
+} */
+
+
+.RightTwo{
+    font-size: 18px;
+    max-width: 450px;
+    transform: scale(0.8);
+    margin-top: 20px;
+}
+
+.Blue{
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(9, 95, 255);
+}
+
+
+/* for mobile and tablet */
+@media (max-width: 500px), (max-width: 850px) {
+    .Right{
+        width: 100%;
+        height: 100%;
+    }
+    .Left{
+        display: none;
+    }
+    .One{
+        height: auto;
+    }
+}
